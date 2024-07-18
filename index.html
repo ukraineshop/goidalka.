@@ -93,13 +93,13 @@ src="https://www.facebook.com/tr?id=950195253576894&ev=PageView&noscript=1"
 
             <script>
                 document.addEventListener('DOMContentLoaded', function() {
-                    document.getElementById('order_form_custom_1').addEventListener('submit', function(e) {
+                    document.getElementById('order_form').addEventListener('submit', function(e) {
                         e.preventDefault(); // Запобігаємо стандартній відправці форми
                 
                         // Отримуємо значення полів форми
-                        var name = document.querySelector('#order_form_custom_1 input[name="name"]').value;
-                        var phone = document.querySelector('#order_form_custom_1 input[name="phone"]').value;
-                        var comment = document.querySelector('#order_form_custom_1 select[name="comment"]').value;
+                        var name = document.querySelector('#order_form input[name="name"]').value;
+                        var phone = document.querySelector('#order_form input[name="phone"]').value;
+                        var comment = document.querySelector('#order_form select[name="comment"]').value;
                 
                         // Формуємо повідомлення
                         var message = `Нове замовлення:\nІм'я та прізвище: ${name}\nТелефон: ${phone}\nКолір: ${comment}`;
@@ -125,7 +125,7 @@ src="https://www.facebook.com/tr?id=950195253576894&ev=PageView&noscript=1"
                             if (data.ok) {
                                 console.log('Success:', data);
                                 // Після успішної відправки, одразу перенаправляємо на сторінку "Дякую"
-                                window.location.href = "./rrrrrrrrr_files/thank_you_page.html";
+                                window.location.href = "./ПІДВІСНА ГОЙДАЛКА_files/thank_you_page.html";
                             } else {
                                 throw new Error('Telegram API Error: ' + data.description);
                             }
@@ -138,7 +138,7 @@ src="https://www.facebook.com/tr?id=950195253576894&ev=PageView&noscript=1"
                 });
                 </script>
                 
-                <form id="order_form_custom_1" method="post" action="https://ukrainetovar.github.io/goidalka/rrrrrrrrr_files/thank_you_page.html" class="main-order-form m1-form">
+                <form id="order_form" method="post" action="https://ukrainetovar.github.io/goidalka/rrrrrrrrr_files/thank_you_page.html" class="main-order-form m1-form">
                     <select name="comment" class="field" data-js="select-sale">
                         <option selected="" value="1">▼ Обрати колір</option>
                         <option value="1" data-id="1">Чорний</option>
@@ -173,7 +173,7 @@ src="https://www.facebook.com/tr?id=950195253576894&ev=PageView&noscript=1"
              <iframe width="480" height="280" src="./ПІДВІСНА ГОЙДАЛКА_files/2jzJBNxliTQ.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
               
 			
-            <a href="https://ukraineshop.github.io/goidalka-/#order_form_custom" class="button-m">Замовити зі знижкою</a>
+            <a href="https://ukraineshop.github.io/goidalka./#order_form" class="button-m">Замовити зі знижкою</a>
         </section>
        
 
@@ -396,7 +396,7 @@ src="https://www.facebook.com/tr?id=950195253576894&ev=PageView&noscript=1"
  <div style="text-align: center; margin: 10px auto; display: block; font-size: 24px; line-height: 26px;">
     <strong style="color: rgb(17, 17, 17);">Залишіть заявку та отримайте відмінну та універсальну гойдалку для свого відпочинку!</strong>
 </div>
-<form id="order_form_custom_2" method="post" action="https://ukrainetovar.github.io/goidalka/rrrrrrrrr_files/thank_you_page.html" class="main-order-form m1-form">
+<form id="order_form" method="post" action="https://ukrainetovar.github.io/goidalka//ПІДВІСНА ГОЙДАЛКА_files/thank_you_page.html" class="main-order-form m1-form">
     <select name="comment" class="field" data-js="select-sale">
         <option selected="" value="1">▼ Обрати колір</option>
         <option value="1" data-id="1">Чорний</option>
